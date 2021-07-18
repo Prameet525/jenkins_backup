@@ -1,0 +1,22 @@
+Started by GitHub push by Prameet525
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/webhooks_test
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Prameet525/testRepo
+ > git init /var/lib/jenkins/workspace/webhooks_test # timeout=10
+Fetching upstream changes from https://github.com/Prameet525/testRepo
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/Prameet525/testRepo +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Prameet525/testRepo # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision cd3b4d17169f26728cee479906bbde269884e899 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f cd3b4d17169f26728cee479906bbde269884e899 # timeout=10
+Commit message: "Update main.c"
+First time build. Skipping changelog.
+Finished: SUCCESS

@@ -1,0 +1,22 @@
+Started by user [8mha:////4FBasrWlA/uhnjaO/WTRXbgFanDyjEgRp+Xn2JkZ6jG5AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLE3NTUEgBkOu5twgAAAA==[0mprameet
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/build_github_code
+The recommended git tool is: NONE
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/Prameet525/testRepo
+ > git init /var/lib/jenkins/workspace/build_github_code # timeout=10
+Fetching upstream changes from https://github.com/Prameet525/testRepo
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/Prameet525/testRepo +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/Prameet525/testRepo # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d18f813f0522620a298fd32d61b52af1270d71aa (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d18f813f0522620a298fd32d61b52af1270d71aa # timeout=10
+Commit message: "removed .o files and .exe file"
+First time build. Skipping changelog.
+Finished: SUCCESS

@@ -1,0 +1,40 @@
+Started by user [8mha:////4FBasrWlA/uhnjaO/WTRXbgFanDyjEgRp+Xn2JkZ6jG5AAAAmR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZe/dLi1CL9gqLE3NTUEgBkOu5twgAAAA==[0mprameet
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/build_github_code
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/build_github_code/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Prameet525/testRepo # timeout=10
+Fetching upstream changes from https://github.com/Prameet525/testRepo
+ > git --version # timeout=10
+ > git --version # 'git version 2.27.0'
+ > git fetch --tags --force --progress -- https://github.com/Prameet525/testRepo +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d18f813f0522620a298fd32d61b52af1270d71aa (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d18f813f0522620a298fd32d61b52af1270d71aa # timeout=10
+Commit message: "removed .o files and .exe file"
+ > git rev-list --no-walk d18f813f0522620a298fd32d61b52af1270d71aa # timeout=10
+[build_github_code] $ /bin/sh -xe /tmp/jenkins2643496507884890331.sh
++ cd /var/lib/jenkins/workspace/build_github_code
++ make
+gcc -c main.c
+main.c:2:2: warning: return type defaults to ‘int’ [-Wimplicit-int]
+  main() {
+  ^~~~
+main.c: In function ‘main’:
+main.c:3:10: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+          biggest3();
+          ^~~~~~~~
+main.c:4:10: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+          factorial();
+          ^~~~~~~~~
+main.c:5:10: warning: implicit declaration of function ‘reverse’ [-Wimplicit-function-declaration]
+          reverse();
+          ^~~~~~~
+cc    -c -o big.o big.c
+cc    -c -o factorial.o factorial.c
+gcc -c rev.c
+gcc -o ABC.exe main.o big.o factorial.o rev.o
+Finished: SUCCESS
